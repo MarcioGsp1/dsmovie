@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,100&family=Open+Sans&display=swap');
 
+:root{
+    --bg-gray: #ddd;
+    --color-primary:aqua;
+}
+
 *{
     box-sizing:border-box ;
     font-family: 'Open Sans', sans-serif;
 }
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
 body{
-    background-color: #E8E8E8;
+    background-color: var(--bg-gray);
 }
 
 header{
-    background-color: aqua;
+    background-color: var(--color-primary);
     color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 nav{
@@ -19,7 +32,25 @@ nav{
     justify-content: space-between;
 }
 
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 400;
+}
 a, a:hover{
     text-decoration: none; 
     color: unset;
+}
+
+.dsmovie-contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img{
+    margin-right:5px;
 }
