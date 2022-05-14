@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,100&family=Open+Sans&display=swap');
 
 *{
+    box-sizing:border-box ;
     font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #E8E8E8;
+}
+
+header{
+    background-color: aqua;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a, a:hover{
+    text-decoration: none; 
+    color: unset;
 }
