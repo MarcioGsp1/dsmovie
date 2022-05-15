@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,100&family=Open+Sans&display=swap');
 
-:root{
+:root {
     --bg-gray: #ddd;
-    --color-primary:aqua;
+    --color-primary: aqua;
     --white: #fff;
-    --text-gray:#4a4a4a;
-    --textl-light-gray:#aaa;
+    --text-gray: #4a4a4a;
+    --textl-light-gray: #aaa;
+    --star-yellow: #ffbb3a;
 }
 
-*{
-    box-sizing:border-box ;
+* {
+    box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
-body{
+body {
     background-color: var(--bg-gray);
 }
 
-header{
+header {
     background-color: var(--color-primary);
     color: #fff;
     height: 60px;
@@ -29,62 +35,64 @@ header{
     align-items: center;
 }
 
-nav{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav h1{
+nav h1 {
     font-size: 24px;
     font-weight: 700;
 }
 
-nav a{
+nav a {
     font-size: 12px;
     font-weight: 400;
 }
-a, a:hover{
-    text-decoration: none; 
+
+a,
+a:hover {
+    text-decoration: none;
     color: unset;
 }
 
-.dsmovie-contact-container{
+.dsmovie-contact-container {
     display: flex;
     align-items: center;
 }
 
-.dsmovie-contact-container img{
-    margin-right:5px;
+.dsmovie-contact-container img {
+    margin-right: 5px;
 }
 
-.dsmovie-card{
+.dsmovie-card {
     width: 100%;
-    
+
 }
 
-#dsmovie-card-list{
+#dsmovie-card-list {
     padding: 40px 0;
 
 }
 
-.dsmovie-card img{
+.dsmovie-card img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
 
-.dsmovie-card-description{
+.dsmovie-card-description {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px 20px 20px 20px;
     background-color: var(--white);
     border-radius: 0 0 8px 8px;
-    min-height: 150px;
+    height: 200px;
     justify-content: space-between;
 }
 
-.dsmovie-card-description h3{
+.dsmovie-card-description h3 {
     margin-bottom: 25px;
     font-size: 14px;
     font-weight: 700;
@@ -92,7 +100,32 @@ a, a:hover{
 
 }
 
-.dsmovie-btn, .dsmovie-btn:hover{
+
+.dsmovie-card-description-bottom img {
+    width: 22px;
+}
+
+.dsmovie-card-description-bottom h4 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
+}
+.dsmovie-card-description-bottom p{
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--textl-light-gray);
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.dsmovie-card-description-bottom {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.dsmovie-btn,
+.dsmovie-btn:hover {
     width: 180px;
     height: 40px;
     background-color: var(--color-primary);
@@ -108,12 +141,12 @@ a, a:hover{
 
 /*Formulário*/
 
-.dsmovie-form-container{
+.dsmovie-form-container {
     padding: 40px 0;
     max-width: 480px;
 }
 
-.dsmovie-card-description{
+.dsmovie-card-description {
     background-color: var(--white);
     padding: 20px;
     display: flex;
@@ -122,17 +155,17 @@ a, a:hover{
     border-radius: 0 0 8px 8px;
 }
 
-.dsmovie-form{
+.dsmovie-form {
     width: 100%;
 }
 
-.dsmovie-form-description h3{
+.dsmovie-form-description h3 {
     font-size: 13px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.dsmovie-form-btn-container{
+.dsmovie-form-btn-container {
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -141,11 +174,11 @@ a, a:hover{
 }
 
 
-.dsmovie-form-group label{
+.dsmovie-form-group label {
     font-size: 12px;
     color: var(--textl-light-gray);
 }
 
-.dsmovie-form-group{
-    margin-bottom:20px;
+.dsmovie-form-group {
+    margin-bottom: 20px;
 }
